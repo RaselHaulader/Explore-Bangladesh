@@ -34,7 +34,7 @@ const Places = () => {
                     </div>
                 </div>
                 <div className="col-md-3 col-12 text-white">
-                    <div className="p-2" style={{backgroundColor:'rgba(16, 198, 253, 0.595)',width:"100%"}}>
+                    <div className="p-2" style={{backgroundColor:'rgb(22, 166, 223)',width:"100%"}}>
                         <h1>Total Spot: {totalSpots.length}</h1>
                         <h2>Total Cost: {totalCost}</h2>
                         <div className="w-100">
