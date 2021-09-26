@@ -13,3 +13,5 @@ Visit this site to enriched Your Knowledge about bd tour spot [Explore-beautiful
 - vanilla css
 - bootstrap
 - React
+- fontawsome icon
+- google fonts

@@ -1,11 +1,15 @@
+/* import google font cdn */
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+
+
+/* Header components style */
 .header{
     background-image: url('../../images/bg-beach3.jpg');
     background-size: cover;
     height: 400px;
     display: flex;
     align-items: center;
-
 }
 .header-details{
     background-color: rgba(255, 255, 255, 0.89);
@@ -28,12 +32,11 @@
 .header-details h1 span{
     color: rgb(22, 166, 223);
 }
+/* header section learn more button */
 .float-btn{
     position: absolute;
     right: 100px;
     bottom: -10px;
-    
-
 }
 .float-btn button{
     padding: 5px;
@@ -42,4 +45,7 @@
     background-color: rgb(248, 183, 63);
     color: white;
     border: none;
+}
+.explore-font{
+    font-size: 38px;
 }

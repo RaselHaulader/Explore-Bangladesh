@@ -1,9 +1,12 @@
+/* google font import link */
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
-span{
+.styled-font{
     font-family: 'Oleo Script', cursive;
     font-size: 32px;
     color: rgb(22, 166, 223);
 }
+
+/* nav bar link style */
 span span{
     color: rgb(248, 183, 63); 
 }

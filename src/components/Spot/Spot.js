@@ -1,23 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Spot.css'
 
 const Spot = (props) => {
-    const { warn, setWarn } = useState('')
     const { spot, img, location, duration, cost, distance } = props.spot
-    const selectedSpot = props.selectedSpots
-    console.log(selectedSpot);
-    if (selectedSpot) {
-        const check = selectedSpot.find((item) => item.spot === spot)
-        if (check) {
-            setWarn('Already Selected')
-        }
-    }
-
-
     return (
         <div className="col" >
             <div className="card h-100 spot">
-                <img src={img} className="card-img-top" alt="..." />
+                <img src={img}  className="card-img-top" alt="..." />
                 <div className="card-body d-flex flex-column justify-content-between">
                     <div className="spot-info">
                         <h4 className="card-title">{spot}</h4>
@@ -25,10 +14,9 @@ const Spot = (props) => {
                         <p><i className="fas fa-road"></i> from Dhaka {distance} km</p>
                         <p><i className="far fa-clock"></i> {duration} days plan</p>
                         <p><i className="fas fa-coins"></i> {cost} BDT</p>
-                        <p>{warn}</p>
                     </div>
                     <div>
-                        <button className="add-btn" onClick={() => props.handleTotal(props.spot)}>Add to wishlist  <i className="fas fa-heart heart-icon"></i></button>
+                        <button className="add-btn" onClick={()=>props.handleTotal(props.spot)}>Add to wishlist  <i className="fas fa-heart heart-icon"></i></button>
                     </div>
                 </div>
             </div>
