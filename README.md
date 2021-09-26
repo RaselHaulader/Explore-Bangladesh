@@ -1,20 +1,15 @@
 # Explore Beautiful Bangladesh
 
-Visit Explore Beautiful Bangladesh to enriched Your Knowledge about bd [Explore-beautiful-bangladesh](https://explore-beautiful-bangladesh.netlify.app/)
+Visit this site to enriched Your Knowledge about bd tour spot [Explore-beautiful-bangladesh](https://explore-beautiful-bangladesh.netlify.app/)
 
 ## Purpose of the site
 
-### Unordered List
+- Help to create a tour plan in Bangladesh
+- informed about amazing place of Bangladesh and cost to visit there
+- Presenting my loving country to the person who want to explore this
 
-- First item
-- Second item
-- Third item
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
+## The technology with which the site has been built
+- html 
+- vanilla css
+- bootstrap
+- React
