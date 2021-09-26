@@ -1,18 +1,20 @@
 import React from 'react';
+import SelectedSpot from '../SelectedSpot/SelectedSpot';
+import './Total.css'
 
 const Total = (props) => {
-    const {spot, img} = props.place
+    console.log(props);
+    const { totalSpots, totalCost } = props
     return (
-        <div className="row align-items-center p-0 m-0 my-2" style={{backgroundColor:"rgba(97, 75, 151, 0.2)"}}>
-            <div className="col-4">
-                <img style={{width:"100%", height:"70px"}} src={img} alt="" />
+        <div className="p-2 total-container rounded" >
+             <div className="text-center mb-5 mt-3">
+              <h4>Total selected Spot: {totalSpots.length}</h4>
+              <h5>Total Cost: {totalCost} TK</h5>
+             </div>
+            <div className="w-100">
+                {totalSpots.map((item)=> <SelectedSpot key={item.spot} place={item}></SelectedSpot>)}
             </div>
-            <div className="col-5">
-                <h6>{spot}</h6>
-            </div>
-            <div className="col-3">
-             <button className="btn btn-danger">X</button>
-            </div>
+
         </div>
     );
 };

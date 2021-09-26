@@ -1,0 +1,30 @@
+.card-img-top{
+  
+    height: 210px;
+    width: 100%;
+}
+.add-btn{
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: rgb(248, 183, 63);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+.spot{
+    background-color: rgba(231, 231, 231, 0.164);
+}
+.spot-info p{
+    padding: 2px;
+    margin: 2px;
+    color: gray;
+    font-size: 16px;
+}
+.spot-info h4{
+    color:rgb(75, 75, 75);
+}
+.heart-icon{
+    color: rgb(255, 73, 73);
+    margin-left: 5px;
+}
