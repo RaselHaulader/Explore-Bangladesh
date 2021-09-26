@@ -38,7 +38,7 @@ const Places = () => {
                 <div className="row w-100 py-2">
                     <div className="col-md-9 col-12">
                         <div className="row row-cols-1 row-cols-md-3 g-4">
-                            {spots.map((spot) => <Spot key={spot.spot} handleTotal={handleTotal} spot={spot}></Spot>)}
+                            {spots.map((spot) => <Spot key={spot.spot} selectedSpot={selectedSpots} handleTotal={handleTotal} spot={spot}></Spot>)}
                         </div>
                     </div>
                     <div className="col-md-3 col-12 text-white">
