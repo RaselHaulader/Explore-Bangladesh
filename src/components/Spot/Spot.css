@@ -2,6 +2,7 @@
   
     height: 210px;
     width: 100%;
+    transition: .2s;
 }
 .add-btn{
     border: none;
@@ -10,7 +11,14 @@
     background-color: rgb(248, 183, 63);
     color: rgb(255, 255, 255);
     border-radius: 5px;
+    transition: .3s;
 
+}
+.add-btn[disabled]{
+    background-color: rgb(59, 132, 228);
+}
+.add-btn:hover{
+    background-color: rgb(59, 132, 228);
 }
 .spot{
     background-color: rgba(231, 231, 231, 0.164);
@@ -27,4 +35,7 @@
 .heart-icon{
     color: rgb(255, 73, 73);
     margin-left: 5px;
+}
+.col:hover .card-img-top{
+  transform: scale(1.2);
 }
