@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import Spot from '../Spot/Spot';
-import Total from '../Total/Total';
-import './Places.css';
+import Total from '../Total/Total'
+import './Places.css'
 
 const Places = () => {
     // contain all spots from server by fetching data
-    const [spots, setSpots] = useState([]);
+    const [spots, setSpots] = useState([])
     //contain selected spots 
-    const [selectedSpots, setSelectedSpots] = useState([]);
+    const [selectedSpots, setSelectedSpots] = useState([])
     // contain total cost of selected spots
-    const [totalCost, setTotalCost] = useState(0);
+    const [totalCost, setTotalCost] = useState(0)
 
     // load data by fetching
     useEffect(() => {
         fetch("./fakeData.json")
             .then(res => res.json())
             .then(data => setSpots(data))
-    }, []);
+    }, [])
 
     // handle selected spots by click add to wish list
     const handleTotal = (item) => {

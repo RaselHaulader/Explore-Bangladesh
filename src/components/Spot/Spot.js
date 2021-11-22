@@ -1,11 +1,17 @@
-import React from 'react';
-import './Spot.css'
+import React, { useEffect } from 'react';
+import './Spot.css';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const Spot = (props) => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
     
     const { spot, img, location, duration, cost, distance } = props.spot
     return (
-        <div className="col" >
+        <div className="col" data-aos="fade-right"  data-aos-anchor-placement="bottom-bottom" >
             <div className="card h-100 spot">
                 <div className="overflow-hidden w-100">
                 <img src={img} className="card-img-top" alt="..." />
